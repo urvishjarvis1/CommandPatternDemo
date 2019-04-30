@@ -1,6 +1,7 @@
-package com.example.commandpatterndemo
+package com.example.commandpatterndemo.invoker
 
 import android.util.Log
+import com.example.commandpatterndemo.command.OrderCommand
 
 class OrderCommandProcessor {
     private val listOfCommand= ArrayList<OrderCommand>()

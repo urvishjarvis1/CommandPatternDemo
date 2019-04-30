@@ -1,4 +1,6 @@
-package com.example.commandpatterndemo
+package com.example.commandpatterndemo.command
+
+import com.example.commandpatterndemo.receiver.OrderReceiver
 
 /**
  * This is Receiver Class for the Command design pattern

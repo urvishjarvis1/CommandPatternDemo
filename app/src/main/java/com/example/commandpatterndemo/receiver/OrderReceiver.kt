@@ -1,4 +1,4 @@
-package com.example.commandpatterndemo
+package com.example.commandpatterndemo.receiver
 
 import android.util.Log
 
