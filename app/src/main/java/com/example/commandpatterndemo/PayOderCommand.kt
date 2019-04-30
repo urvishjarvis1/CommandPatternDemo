@@ -1,6 +1,9 @@
 package com.example.commandpatterndemo
 
-class PayOderCommand(val id:Long):OrderCommand{
-    override fun execute()="Payment made for Order id:$id"
+/**
+ * This is Receiver Class for the Command design pattern
+ */
+class PayOderCommand(val paymentReceiver: PaymentReceiver) : OrderCommand {
+    override fun execute() = paymentReceiver.makePayment()
 
 }

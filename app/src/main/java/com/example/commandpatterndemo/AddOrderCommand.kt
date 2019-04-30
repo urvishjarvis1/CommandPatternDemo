@@ -1,6 +1,9 @@
 package com.example.commandpatterndemo
 
-class AddOrderCommand(val id:Long) : OrderCommand{
-    override fun execute()="Order added for $id"
+/**
+ * This is Receiver Class for the Command design pattern
+ */
+class AddOrderCommand(val orderReceiver: OrderReceiver) : OrderCommand {
+    override fun execute() = orderReceiver.makeOrder()
 
 }
